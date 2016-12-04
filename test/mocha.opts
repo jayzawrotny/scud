@@ -1,0 +1,4 @@
+--require ./test/lib/setup
+--recursive
+--colors
+--slow 500

@@ -4,7 +4,7 @@
   "description": "Library for running remote & local shell commands",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test/**/*_test.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,12 @@
   },
   "homepage": "https://github.com/venuebook/scud#readme",
   "dependencies": {
+    "debug": "^2.3.3",
     "highland": "^2.10.1",
     "ssh2": "^0.5.4"
   },
   "devDependencies": {
+    "expect": "^1.20.2",
     "mocha": "^3.2.0"
   }
 }
