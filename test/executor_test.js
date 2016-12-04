@@ -27,7 +27,7 @@ describe('Executor', () => {
         {
           cmd: 'one',
           options: {},
-          values: ['two', 'three']
+          values: ['two', 'three'],
         },
         'exec',
       ]);
@@ -81,7 +81,7 @@ describe('Executor', () => {
         {
           cmd: 'one',
           options: {},
-          values: ['two', 'three']
+          values: ['two', 'three'],
         },
         'stream',
       ]);
@@ -141,7 +141,7 @@ describe('Executor', () => {
         {
           cmd: 'one',
           options: {},
-          values: ['two', 'three']
+          values: ['two', 'three'],
         },
         'prompt',
       ]);
@@ -169,7 +169,7 @@ describe('Executor', () => {
           options: {
             prompt: '(y/n) ',
           },
-          values: ['two', 'three']
+          values: ['two', 'three'],
         },
         'confirm',
       ]);
@@ -215,7 +215,6 @@ describe('Executor', () => {
         })
         .toPromise();
     });
-
   });
 
   describe('#cd()', () => {
@@ -269,7 +268,7 @@ describe('Executor', () => {
 
       openSpy.andCall(() => {
         return _.of({ stdout: 'hello world', stderr: '' });
-      })
+      });
 
       return executor.cd('base')
         .inspect((err, cwd) => {
@@ -290,8 +289,8 @@ describe('Executor', () => {
 
   describe('#open()', () => {
     it('Should call the target method on the commander');
-    it('Should provide a stream-like interface to the commander')
-    it('Should send data from stream-like interface')
+    it('Should provide a stream-like interface to the commander');
+    it('Should send data from stream-like interface');
   });
 
   describe('#parseArgs()', () => {

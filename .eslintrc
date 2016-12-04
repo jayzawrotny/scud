@@ -4,18 +4,6 @@
     "es6": true,
     "node": true
    },
-   "globals": {
-    "_": true,
-    "expect": true,
-    "describe": true,
-    "it": true,
-    "before": true,
-    "after": true,
-    "beforeEach": true,
-    "afterEach": true,
-    "clearRequireCache": true,
-    "restoreSpies": true
-   },
    "ecmaFeatures": {
     "arrowFunctions": true,
     "binaryLiterals": true,

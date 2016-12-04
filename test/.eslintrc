@@ -1,0 +1,17 @@
+{
+   "globals": {
+    "_": true,
+    "expect": true,
+    "describe": true,
+    "it": true,
+    "before": true,
+    "after": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "clearRequireCache": true,
+    "restoreSpies": true
+   },
+  "rules": {
+    "max-nested-callbacks": [0, 3] // .................. Specify the maximum depth callbacks can be nested
+  }
+}
